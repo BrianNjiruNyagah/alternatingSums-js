@@ -1,0 +1,19 @@
+function alternatingSums(a) {
+    //variables used to solve task
+    var teamA = 0;
+    var teamB = 0;
+    var teamArray = [];
+    
+    //loop adds the odd index values and the evens index values
+    for(var i = 0;i<a.length;i++){
+        if(i%2==0){
+            teamA+=a[i];
+        }else{
+            teamB+=a[i];     
+        }
+    }
+    
+    teamArray.push(teamA);
+    teamArray.push(teamB);
+    return teamArray;
+}
